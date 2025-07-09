@@ -1,0 +1,27 @@
+{
+  // ⭐ COMPILER OPTIONS ── controlan cómo TypeScript emite JS
+  "compilerOptions": {
+    /* ---------- Salida ---------- */
+    "outDir": "dist",          // Carpeta donde quedarán los .js compilados
+    "rootDir": "src/cli",      // Carpeta de entrada: solo compila tu código CLI
+    "declaration": false,      // No necesitas .d.ts para la CLI (puedes cambiarlo)
+
+    /* ---------- Objetivo de JS ---------- */
+    "target": "ES2020",        // Buen balance: async/await nativo y amplia compat
+    "module": "esnext",      // Para que Node pueda ejecutar require()
+
+    /* ---------- Módulos/interop ---------- */
+    "esModuleInterop": true,   // Permite importar libs CommonJS con import default
+    "resolveJsonModule": true, // Por si tu CLI lee .json (por ej. package.json)
+    "moduleResolution": "node", // Resuelve módulos como Node.js
+
+    /* ---------- Estrictos / ergonomía ---------- */
+    "strict": false,               // Activa el modo estricto; quítalo si te molesta
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true          // Ahorra tiempo de build ignorando defs de terceros
+  },
+
+  "include": ["src/cli/**/*"],
+
+  "exclude": ["dist", "node_modules", "**/*.spec.ts"]
+}
