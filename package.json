@@ -8,20 +8,24 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --project tsconfig.cli.json && echo '#!/usr/bin/env node' | cat - dist/init.js > temp && mv temp dist/init.js && chmod +x dist/init.js",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
     "prepublishOnly": "npm run build"
   },
   "author": "Nicolas Oleinizak",
   "license": "ISC",
   "dependencies": {
     "commander": "^14.0.0",
+    "express": "^5.1.0",
     "fs-extra": "^11.3.0",
-    "path": "^0.12.7",
-    "url": "^0.11.4"
+    "path": "^0.12.7"
   },
   "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^24.0.12",
+    "tsc-alias": "^1.8.16",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
-  },
-  "type": "module"
+  }
 }
