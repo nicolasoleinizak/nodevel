@@ -4,7 +4,7 @@
   "description": "A framework for backend web server",
   "main": "index.js",
   "bin": {
-    "nodevel": "dist/init.js"
+    "nodevel": "dist/cli/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
