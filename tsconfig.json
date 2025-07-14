@@ -1,53 +1,21 @@
 {
   "compilerOptions": {
-    /* Ruta de salida para los archivos compilados */
     "outDir": "dist",
-
-    /* Carpeta raíz de tu código fuente */
     "rootDir": "src",
-
-    /* Generar sourcemaps para debugging */
     "sourceMap": true,
-
-    /* Incluir archivos de definición de tipo (.d.ts) */
     "declaration": true,
     "declarationMap": true,
-
-    /* Nivel de compatibilidad ES para tu target JS */
     "target": "ES2019",
-
-    /* Módulos: para un paquete npm suele usarse CommonJS, 
-       o "ESNext" si publicas módulos esm */
     "module": "CommonJS",
-
-    /* Resolución de módulos al estilo Node.js */
     "moduleResolution": "Node",
-
-    /* Habilita importaciones por defecto de módulos CommonJS */
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-
-    /* Forzar consistencia de mayúsculas/minúsculas en imports */
     "forceConsistentCasingInFileNames": true,
-
-    /* Beneficios de chequeos estricos: null, any, etc. */
     "strict": true,
-
-    /* Omite las comprobaciones de tipo en dependencias (speed) */
     "skipLibCheck": true,
-
-    /* Permite importar JSON como módulo */
     "resolveJsonModule": true,
-
-    /* Para path mapping si lo necesitas
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
-    */
   },
 
-  /* Sólo procesa tu código, no node_modules ni carpetas de salida */
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules", "lib", "dist", "test", "**/*.spec.ts"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/router/index.ts", "src/templates/copy/src/boostrap/routes.ts", "src/templates/copy/src/boostrap/indesrc/templates/copy/src/config/routes.tsoutesrc/templates/copy/src/routes/routes.ts.templatetemplate"],
+  "exclude": ["node_modules", "src/templates", "lib", "dist", "test", "**/*.spec.ts"]
 }
