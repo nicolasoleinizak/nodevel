@@ -4,13 +4,13 @@
   "description": "A framework for backend web server",
   "main": "src/index.js",
   "bin": {
-    "nodevel": "dist/cli/index.js"
+    "nodevel": "lib/cli/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf dist",
-    "build": "npm run clean && tsc && mkdir -p ./dist/templates/copy && cp ./src/templates ./dist -r",
-    "postbuild": "chmod +x dist/cli/index.js",
+    "clean": "rm -rf lib",
+    "build": "npm run clean && tsc && mkdir -p ./lib/templates/copy && cp ./src/templates ./lib -r",
+    "postbuild": "chmod +x lib/cli/index.js",
     "prepublishOnly": "npm run build",
     "run": "nodevel serve"
   },
@@ -30,9 +30,5 @@
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   },
-  "files": [
-    "dist",
-    "templates"
-  ],
-  "types": "dist/index.d.ts"
+  "types": "lib/index.d.ts"
 }

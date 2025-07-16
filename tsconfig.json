@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
+    "outDir": "lib",
     "rootDir": "src",
     "sourceMap": true,
     "declaration": true,
@@ -17,5 +17,5 @@
   },
 
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/router/index.ts", "src/templates/copy/src/boostrap/routes.ts", "src/templates/copy/src/boostrap/indesrc/templates/copy/src/config/routes.tsoutesrc/templates/copy/src/routes/routes.ts.templatetemplate"],
-  "exclude": ["node_modules", "src/templates", "lib", "dist", "test", "**/*.spec.ts"]
+  "exclude": ["node_modules", "src/templates", "lib", "test", "**/*.spec.ts"]
 }
