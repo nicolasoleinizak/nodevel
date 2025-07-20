@@ -1,0 +1,1 @@
+{"version":3,"file":"RouteGroup.d.ts","sourceRoot":"","sources":["../../src/router/RouteGroup.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,SAAS,CAAC;AAEhC,cAAM,UAAU;IACd,OAAO,EAAE,KAAK,EAAE,CAAM;IAEtB,MAAM,CAAC,MAAM,CACX,MAAM,EAAE,KAAK,EAAE,EACf,MAAM,CAAC,EAAE,MAAM,GAAG,IAAI;IAWxB,MAAM;CAGP;AAED,OAAO,EAAE,UAAU,EAAC,CAAC"}

@@ -31,4 +31,6 @@ function routesBootstrap(app: any, routes: RouteGroup[] | Route[]) {
   });
 }
 
-createServer();
+export default function() {
+  createServer();
+}

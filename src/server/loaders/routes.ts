@@ -1,14 +1,16 @@
-import path from 'path';
-import routesConfig from '../config/routes.ts';
+import path from "path";
 
-export default function() {
+export class RoutesLoader
+{
+  static getRoutes(routesConfig: any = { files: [] }) {
     const routesFiles = routesConfig.files;
 
     const routes = routesFiles.map((file: string) => {
-        const resolvedPath = path.resolve(__dirname, '../../', file);
+        const resolvedPath = path.resolve(process.cwd(), file);
         const module = require(resolvedPath);
         return module.default;
     });
 
     return routes;
+  }
 }
